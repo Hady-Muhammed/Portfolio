@@ -1,0 +1,205 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-padding: 0 50px 100px;
+}
+.container > h2 {
+    font-weight: bold;
+}
+/* End Global Rules */
+/* Start Header */
+header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+header nav li a {
+    transition: 0.3s !important;    
+}
+header nav li a:hover {
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+@media (min-width: 576px) {
+.navbar-expand-sm .navbar-collapse {
+    justify-content: flex-end;
+    display: flex!important;
+    flex-basis: auto;
+}
+}
+@media (min-width: 576px) {
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+}
+/* End Header */
+/* Start Section */
+section {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    position: relative;
+}
+section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    animation: fading infinite linear 2s alternate-reverse;
+}
+section::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/hady\ copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 67%;
+    z-index: 1;
+    width: 33%;
+    height: 100%;
+}
+@media (max-width: 980px) {
+    section::before {
+        left: 0;
+        width: 100%;
+    }
+}
+section .container {
+    padding: var(--main-padding);
+    color: white;
+    position: relative;
+    top: 25%;
+    z-index: 1;
+}
+section ul li i {
+    font-size: 25px;
+}
+section .container h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+section .container .t {
+    font-size: 25px;
+    font-weight: bold;
+}
+/* End Section */
+/* Start Services */
+.services {
+    margin-top: 100px;
+}
+.services .container {
+    padding: var(--main-padding);
+}
+.services .row i {
+    font-size: 6em;
+    color: green;
+}
+.services h3 {
+    font-size: 19px;
+    margin: 15px 0px;
+}
+.services .row div {
+    transition: 0.5s;
+}
+.services .row div:hover {
+    transform: translateY(20px)
+}
+.services .row div p {
+    color: #7e7e7e;
+}
+.services .row div:nth-child(2) p span {
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+}
+/* End Services */
+/* Start Projects */
+.projects {
+    padding-top: 100px;
+}
+.projects .container {
+    padding: var(--main-padding);
+}
+.projects .container .gridbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px , 1fr));
+    gap: 10px;
+}
+@media (max-width: 769px) {
+    .projects .container .gridbox {
+        grid-template-columns: repeat(auto-fill,minmax(200px , 1fr));
+    }
+}
+.projects img {
+    width: 100%;
+    height: 70%;
+}
+.projects .prjct {
+    height: 54vh;
+}
+.projects .prjct p {
+    padding: 10px;
+}
+.projects .prjct a {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* End Projects */
+/* Start Contact */
+.contact {
+    padding-top: 100px;
+}
+.contact .container {
+    padding: var(--main-padding);
+}
+.contact .container .gridbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(40% , 1fr));
+    gap: 10px;
+}
+.contact .container i {
+    font-size: 70px;
+    padding: 10px;
+    color: green;
+}
+.contact .container a {
+    color: green;
+}
+.contact .container .gridbox > .box {
+    overflow: hidden;
+}
+@media (max-width: 600px) {
+    .contact .container .gridbox {
+        grid-template-columns: repeat(auto-fill,minmax(50% , 1fr));
+    }
+}
+/* End Contact */
+
+
+
+/* Start Animations */
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End Animations */

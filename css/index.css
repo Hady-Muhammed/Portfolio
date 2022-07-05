@@ -150,7 +150,7 @@ section .container .t {
     height: 70%;
 }
 .projects .prjct {
-    height: 54vh;
+    height: fit-content;
 }
 .projects .prjct p {
     padding: 10px;

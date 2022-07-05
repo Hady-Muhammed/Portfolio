@@ -190,9 +190,16 @@ section .container .t {
     }
 }
 /* End Contact */
-
-
-
+@media (max-height: 550px) {
+    section {
+        height: 140vh;
+    }
+}
+@media (max-width: 400px) {
+    footer ul {
+        flex-direction: column
+    }
+}
 /* Start Animations */
 @keyframes fading {
     from {

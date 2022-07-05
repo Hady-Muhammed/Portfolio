@@ -190,9 +190,11 @@ section .container .t {
     }
 }
 /* End Contact */
-
-
-
+@media (max-height: 550px) {
+    section {
+        height: 140vh;
+    }
+}
 /* Start Animations */
 @keyframes fading {
     from {

@@ -195,6 +195,11 @@ section .container .t {
         height: 140vh;
     }
 }
+@media (max-width: 400px) {
+    footer ul {
+        flex-direction: column
+    }
+}
 /* Start Animations */
 @keyframes fading {
     from {

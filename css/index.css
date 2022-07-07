@@ -97,6 +97,17 @@ section .container .t {
     font-size: 25px;
     font-weight: bold;
 }
+@media (min-width: 769px) {
+    section .container .t {
+        font-size: 25px;
+        font-weight: bold;
+        width: 0;
+        /* border-right: 1px solid white; */
+        white-space: nowrap;
+        animation: typewriter 2s 2s steps(49) both;
+        overflow: hidden;
+    }
+}
 /* End Section */
 /* Start Services */
 .services {
@@ -207,6 +218,14 @@ section .container .t {
     }
     to {
         opacity: 1;
+    }
+}
+@keyframes typewriter {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 626.73px;
     }
 }
 /* End Animations */

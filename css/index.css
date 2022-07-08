@@ -172,29 +172,21 @@ section .container .t {
 }
 .projects .prjct {
     height: fit-content;
+    counter-reset: sike;
 }
 .projects .prjct p {
     padding: 10px;
-    counter-reset: sike;
 }
 .projects .prjct p::before {
     counter-increment: sike;
+    margin-right: 10px;
     content: counter(sike);
     font-weight: bold;
     color: white;
     background-color: chartreuse;
-    padding: 20px;
+    padding: 5px 15px;
     border-radius: 50%;
     animation: animated-1 alternate infinite 3s;
-}
-.projects .prjct p::after {
-    content: "";
-    padding: 20px;
-    border: 2px solid goldenrod;
-    border-left: none;
-    background-color: transparent;
-    border-radius: 50%;
-    animation: animated-2 alternate infinite 3s;
 }
 .projects .prjct a {
     display: block;

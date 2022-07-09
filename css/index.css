@@ -152,6 +152,7 @@ section .container .t {
 /* Start Projects */
 .projects {
     padding-top: 100px;
+    counter-reset: sike;
 }
 .projects .container {
     padding: var(--main-padding);
@@ -172,7 +173,6 @@ section .container .t {
 }
 .projects .prjct {
     height: fit-content;
-    counter-reset: sike;
 }
 .projects .prjct p {
     padding: 10px;
@@ -186,7 +186,7 @@ section .container .t {
     background-color: chartreuse;
     padding: 5px 15px;
     border-radius: 50%;
-    animation: animated-1 alternate infinite 3s;
+    animation: animated-1 alternate infinite 2s;
 }
 .projects .prjct a {
     display: block;
@@ -253,10 +253,9 @@ section .container .t {
 @keyframes animated-1 {
     from {
         color: white;
-        background-color: chartreuse;
+        background-color: cadetblue;
     }
     to {
-        color: black;
         background-color: rgb(38, 74, 1);
     }
 }

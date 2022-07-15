@@ -162,11 +162,7 @@ section .container .t {
     grid-template-columns: repeat(auto-fill,minmax(400px , 1fr));
     gap: 10px;
 }
-@media (max-width: 769px) {
-    .projects .container .gridbox {
-        grid-template-columns: repeat(auto-fill,minmax(200px , 1fr));
-    }
-}
+
 .projects img {
     width: 100%;
     height: 70%;

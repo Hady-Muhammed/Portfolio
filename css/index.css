@@ -199,6 +199,9 @@ section .container .t {
 .prjct a {
     font-style: italic;
 }
+.btn-light:hover {
+    background-color: #cccccc !important;
+}
 /* End Projects */
 /* Start Contact */
 .contact {

@@ -5,7 +5,7 @@ let skillsBOTTOM = document.getElementById("bottom");
 let cards = document.querySelectorAll(".col-lg-4");
 let nav = document.getElementById("nav");
 window.onscroll = function () {
-    if (window.scrollY >= 3729) {
+    if (window.scrollY >= 4441) {
         contactBoxL.style.animation = "comingleft 1s ease-in 1";
         contactBoxR.style.animation = "comingright 1s ease-in 1"; 
     } else {

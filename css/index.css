@@ -168,7 +168,7 @@ section .container .t {
 .projects .container .gridbox {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px , 1fr));
-    gap: 10px;
+    gap: 75px;
 }
 
 .projects img {
@@ -194,8 +194,9 @@ section .container .t {
 }
 .projects .prjct a {
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
+    white-space: nowrap;
 }
 .projects .prjct ul {
     list-style: none;

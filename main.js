@@ -13,5 +13,8 @@ window.onscroll = function () {
     if (window.scrollY >= 663 && window.scrollY <= 1836) {
         skillsTOP.style.animation = "comingUP 1s ease-in 1";
         skillsBOTTOM.style.animation = "comingDOWN 1s ease-in 1"; 
+    } else {
+        skillsTOP.style.animation = "";
+        skillsBOTTOM.style.animation = ""; 
     }
 }

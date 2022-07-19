@@ -24,6 +24,9 @@ html {
     background-color:seagreen;
     border-radius: 8px;
 }
+.fw-b {
+    font-weight: bold;
+}
 /* End Global Rules */
 /* Start Header */
 header {
@@ -204,6 +207,20 @@ section .container .t {
 }
 .btn-light:hover {
     background-color: #cccccc !important;
+}
+@media (max-width: 500px) {
+    .projects .container .gridbox {
+        grid-template-columns: repeat(auto-fill,minmax(200px , 1fr));
+    }
+    .prjct a {
+        width: 100% !important;
+    }
+}
+.prjct ul i {
+    font-size: 1.5em;
+}
+.prjct span {
+    font-size: .7em;
 }
 /* End Projects */
 /* Start Contact */

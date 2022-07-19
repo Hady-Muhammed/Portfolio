@@ -3,6 +3,7 @@ let contactBoxR = document.getElementById("right");
 let skillsTOP = document.getElementById("top");
 let skillsBOTTOM = document.getElementById("bottom");
 let cards = document.querySelectorAll(".col-lg-4");
+let nav = document.getElementById("nav");
 window.onscroll = function () {
     if (window.scrollY >= 3729) {
         contactBoxL.style.animation = "comingleft 1s ease-in 1";
@@ -25,6 +26,11 @@ window.onscroll = function () {
     } else {
         for(let i = 0 ; i < cards.length ; i++){
             cards[i].style.animation = "";
-        }
+        }      
+    }
+    if (window.scrollY >= 900 && window.scrollY <= 2000) {
+        nav.classList.add("bg-dark");
+    } else {
+        nav.classList.remove("bg-dark");
     }
 }

@@ -51,6 +51,9 @@ header nav li a:hover {
     padding-left: 1.5rem;
 }
 }
+#nav {
+    transition: .5s;
+}
 /* End Header */
 /* Start Section */
 section {

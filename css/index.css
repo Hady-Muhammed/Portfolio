@@ -289,8 +289,28 @@ section .container .t {
         opacity: 0;
     }
     to {
-        opacity: 1;
         transform: translate(0%) rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes comingUP {
+    from {
+        transform: scale(1.5) translateY(-25%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(0) translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes comingDOWN {
+    from {
+        transform: scale(1.5) translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(0) translateY(0%);
+        opacity: 1;
     }
 }
 /* End Animations */

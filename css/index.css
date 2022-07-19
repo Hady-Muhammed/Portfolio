@@ -122,6 +122,7 @@ section .container .t {
 /* Start Services */
 .services {
     margin-top: 100px;
+    overflow: hidden;
 }
 .services .container {
     padding: var(--main-padding);
@@ -295,22 +296,30 @@ section .container .t {
 }
 @keyframes comingUP {
     from {
-        transform: scale(1.5) translateY(-25%);
+        transform: scaleY(1.5) translateY(-25%);
         opacity: 0;
     }
     to {
-        transform: scale(1) translateY(0%);
+        transform: scaleY(1) translateY(0%);
         opacity: 1;
     }
 }
 @keyframes comingDOWN {
     from {
-        transform: scale(1.5) translateY(20%);
+        transform: scaleY(1.5) translateY(20%);
         opacity: 0;
     }
     to {
-        transform: scale(1) translateY(0%);
+        transform: scaleY(1) translateY(0%);
         opacity: 1;
     }
+}
+@keyframes skeww {
+    from {
+        transform: skewX(-15deg);
+    }
+    to {
+        transform: skewX(0);
+    } 
 }
 /* End Animations */

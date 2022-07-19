@@ -202,6 +202,7 @@ section .container .t {
 /* Start Contact */
 .contact {
     padding-top: 100px;
+    overflow: hidden;
 }
 .contact .container {
     padding: var(--main-padding);
@@ -270,6 +271,26 @@ section .container .t {
     }
     to {
         transform: rotate(1turn);
+    }
+}
+@keyframes comingleft {
+    from {
+        transform: translate(-70%) rotate(45deg);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%) rotate(0deg);
+    }
+}
+@keyframes comingright {
+    from {
+        transform: translate(70%) rotate(-45deg);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%) rotate(0deg);
     }
 }
 /* End Animations */

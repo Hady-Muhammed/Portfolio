@@ -318,11 +318,11 @@ section .container .t {
     }
 }
 @keyframes skeww {
-    from {
-        transform: skewX(-15deg);
+    from {     
+        transform: translateX(100%);
     }
     to {
-        transform: skewX(0);
+        transform: translateX(0);
     } 
 }
 /* End Animations */

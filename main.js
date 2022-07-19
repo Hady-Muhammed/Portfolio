@@ -20,7 +20,7 @@ window.onscroll = function () {
     }
     if (window.scrollY >= 167 && window.scrollY <= 1404) {
         for(let i = 0 ; i < cards.length ; i++){
-            cards[i].style.animation = "skeww 1s ease-in 1";
+            cards[i].style.animation = "skeww .5s ease-in 1";
         }
     } else {
         for(let i = 0 ; i < cards.length ; i++){

@@ -193,7 +193,10 @@ section .container .t {
     list-style: none;
 }
 .projects .prjct ul li::before{
-    content: "-";
+    content: "- ";
+}
+.prjct a {
+    font-style: italic;
 }
 /* End Projects */
 /* Start Contact */

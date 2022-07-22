@@ -145,7 +145,7 @@ section .container .t {
 .services .row div {
     transition: 0.5s;
 }
-.services .row div:hover {
+.services .row .col-sm:hover {
     transform: translateY(20px)
 }
 .services .row div p {
@@ -155,6 +155,41 @@ section .container .t {
     font-weight: bold;
     font-size: 20px;
     color: green;
+}
+.col-lg-4 {
+    background-color: gainsboro;
+    -webkit-clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+.col-lg-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    transition: 0.3s;
+    height: 5px;
+    background-color: green;
+}
+.col-lg-4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    transition: 0.3s;
+    height: 5px;
+    background-color: green;
+}
+.col-lg-4:hover {
+    background-color: gainsboro;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.col-lg-4:hover::before ,
+.col-lg-4:hover::after {
+    width: 100%;
 }
 /* End Services */
 /* Start Projects */

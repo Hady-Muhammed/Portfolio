@@ -196,6 +196,7 @@ section .container .t {
 .projects {
     padding-top: 100px;
     counter-reset: sike;
+    overflow: hidden;
 }
 .projects .container {
     padding: var(--main-padding);

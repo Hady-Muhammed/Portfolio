@@ -146,7 +146,7 @@ section .container .t {
     transition: 0.5s;
 }
 .services .row .col-sm:hover {
-    transform: translateY(20px)
+    transform: scale(1.4) translateY(-10%);
 }
 .services .row div p {
     color: #7e7e7e;

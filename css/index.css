@@ -277,6 +277,9 @@ section .nav a:hover  {
     padding-top: 100px;
     overflow: hidden;
 }
+.contact .box {
+    cursor: pointer;
+}
 .contact .container {
     padding: var(--main-padding);
 }

@@ -70,6 +70,9 @@ section {
 section h1 {
     color: #2ad284 !important;
 }
+section h1::first-letter {
+    font-size: 1.5em;
+}
 section::after {
     content: "";
     position: absolute;
@@ -174,6 +177,9 @@ section .nav a:hover  {
     clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
     position: relative;
 }
+.col-lg-4 h3 {
+   transition: .5s;
+}
 .col-lg-4::before {
     content: "";
     position: absolute;
@@ -195,9 +201,13 @@ section .nav a:hover  {
     background-color: green;
 }
 .col-lg-4:hover {
-    background-color: gainsboro;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.col-lg-4:hover h3 {
+    color:white;
+    font-size: 1.25em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .col-lg-4:hover::before ,
 .col-lg-4:hover::after {

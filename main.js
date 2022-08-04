@@ -36,4 +36,5 @@ contactTabs[0].onclick = function () {
 contactTabs[1].onclick = function () {
     window.location.href = 'mailto:hadyymohammed@gmail.com';
 }
-console.log(cards)
+
+

@@ -71,6 +71,12 @@ section h1 {
     color: #2ad284 !important;
     font-family: 'Montserrat', sans-serif !important;
 }
+section p span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-variant: petite-caps;
+    font-size: 1.3em;
+}
 section h1::first-letter {
     font-size: 1.5em;
 }

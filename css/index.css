@@ -69,6 +69,7 @@ section {
 }
 section h1 {
     color: #2ad284 !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 section h1::first-letter {
     font-size: 1.5em;
@@ -122,6 +123,8 @@ section .container h1 {
 section .container .t {
     font-size: 25px;
     font-weight: bold;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif !important;
 }
 section .nav a {
     transition: .3s
@@ -134,9 +137,8 @@ section .nav a:hover  {
         font-size: 25px;
         font-weight: bold;
         width: 0;
-        /* border-right: 1px solid white; */
         white-space: nowrap;
-        animation: typewriter 2s 2s steps(49) both;
+        animation: typewriter 2.5s 2s steps(49) both;
         overflow: hidden;
     }
 }
@@ -341,6 +343,13 @@ footer .nav a {
 footer .nav a:hover  {
     color: green !important;
 } 
+footer img {
+    width: 10%;
+}
+footer .container .container {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+}
 /* End Footer */
 @media (max-height: 550px) {
     section {
@@ -366,7 +375,7 @@ footer .nav a:hover  {
         width: 0px;
     }
     to {
-        width: 626.73px;
+        width: 100%;
     }
 }
 @keyframes animated-1 {
@@ -403,26 +412,6 @@ footer .nav a:hover  {
     }
     to {
         transform: translate(0%) rotate(0deg);
-        opacity: 1;
-    }
-}
-@keyframes comingUP {
-    from {
-        transform: scaleY(1.5) translateY(-25%);
-        opacity: 0;
-    }
-    to {
-        transform: scaleY(1) translateY(0%);
-        opacity: 1;
-    }
-}
-@keyframes comingDOWN {
-    from {
-        transform: scaleY(1.5) translateY(20%);
-        opacity: 0;
-    }
-    to {
-        transform: scaleY(1) translateY(0%);
         opacity: 1;
     }
 }

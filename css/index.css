@@ -230,6 +230,37 @@ section .nav a:hover  {
 .col-lg-4:hover::after {
     width: 100%;
 }
+.bonus {
+    list-style: none; 
+}
+.bonus h1 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.bonus h1::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    top: 125%;
+    height: 2px;
+    background-color: green;
+}
+.bonus li {
+    padding: .5em;
+}
+.bonus li::before {
+    content: "\2022";  
+    color: green; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    font-size: 1.2em;
+    margin-left: -1em; 
+}
+.bonus li a {
+    color: green;
+    font-weight: 500;
+}
 /* End Services */
 /* Start Projects */
 .projects {

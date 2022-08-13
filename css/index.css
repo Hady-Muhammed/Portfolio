@@ -67,6 +67,21 @@ header nav li a:hover {
 #nav {
     transition: .5s;
 }
+@media (max-width:700px) {
+    header .container-fluid {
+        flex-direction: column;
+    }
+    .navbar-brand {
+        margin-bottom: 1em;
+    }
+    .navbar-collapse {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item {
+        margin: .3em 0;
+    }
+}
 /* End Header */
 /* Start Section */
 section {
@@ -232,6 +247,7 @@ section .nav a:hover  {
 }
 .bonus {
     list-style: none; 
+    width: 50%;
 }
 .bonus h1 {
     position: relative;
@@ -240,7 +256,7 @@ section .nav a:hover  {
 .bonus h1::before {
     content: '';
     position: absolute;
-    width: 10%;
+    width: 130px;
     top: 125%;
     height: 2px;
     background-color: green;
@@ -260,6 +276,44 @@ section .nav a:hover  {
 .bonus li a {
     color: green;
     font-weight: 500;
+}
+.services .flex {
+    display: flex;
+}
+.services .flex .link {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 20em;
+    margin-top: 6em;
+    border: 2px solid green;
+    color: green;
+    font-weight: bold;
+    padding: 1em;
+    background-color: white;
+    outline: none;
+    transition: .5s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.services .flex .link:hover {
+    background-color: green;
+    color: white;
+}  
+@media (max-width: 1029px) {
+    .services .flex {
+        flex-direction: column;
+    }
+    .services .flex .link {
+        margin-left: 3em;
+        margin-bottom: 6em;
+        margin-top: 0;
+    }
+}
+@media (max-width: 600px) {
+    .bonus {
+        width: 80%;
+    }
 }
 /* End Services */
 /* Start Projects */

@@ -3,8 +3,10 @@ let contactBoxR = document.getElementById("right");
 let nav = document.getElementById("nav");
 let contactTabs = document.querySelectorAll(".contact .box");
 let aos = document.querySelectorAll('.aos');
+let contact = document.querySelector('.contact');
+// console.log(contact.offsetTop)
 window.onscroll = function () {
-    if (window.scrollY >= 4441) {
+    if (window.scrollY >= contact.offsetTop - 700) {
         contactBoxL.style.animation = "comingleft 1s ease-in 1";
         contactBoxR.style.animation = "comingright 1s ease-in 1"; 
     } else {

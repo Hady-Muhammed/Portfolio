@@ -36,8 +36,8 @@ header {
     top: 0;
 }
 header a {
-    background-image: url(../images/landing.jpg);
-    background-size: auto;
+    background: rgb(9,87,34);
+    background: linear-gradient(342deg, rgba(9,87,34,1) 10%, rgba(0,0,0,1) 88%);
     border-radius: 10px;
     color: white !important;
     padding: 0 1em;
@@ -207,6 +207,7 @@ section .nav a:hover  {
     background-color: gainsboro;
     -webkit-clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
     clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
+    margin-right: .2em;
     position: relative;
 }
 .col-lg-4 h3 {

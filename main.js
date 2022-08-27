@@ -68,7 +68,8 @@ themeTabs.forEach((tab) => {
                 root.style.setProperty("--theme-color2","#e91e6378")
                 root.style.setProperty("--theme-color3","#e91e6378")
                 root.style.setProperty("--theme-color4","#e91e6378")
-                landing.style.setProperty("background-image","url(../images/landing1.jpg)")
+                // landing.style.setProperty("background-image","url(../images/landing1.jpg)")
+                landing.style.backgroundImage = "url(../images/landing1.jpg)";
                 localStorage.setItem("color","#e91e6378");
                 localStorage.id = 'theme1'
             }
@@ -77,7 +78,8 @@ themeTabs.forEach((tab) => {
                 root.style.setProperty("--theme-color2","#03a9f4")
                 root.style.setProperty("--theme-color3","#03a9f4")
                 root.style.setProperty("--theme-color4","#03a9f4")
-                landing.style.setProperty("background-image","url(../images/landing2.jpg)")
+                // landing.style.setProperty("background-image","url(../images/landing2.jpg)")
+                landing.style.backgroundImage = "url(../images/landing2.jpg)"
                 localStorage.setItem("color","#03a9f4");
                 localStorage.id = 'theme2'
             } 
@@ -86,7 +88,8 @@ themeTabs.forEach((tab) => {
                 root.style.setProperty("--theme-color2","#2ad284")
                 root.style.setProperty("--theme-color3","seagreen")
                 root.style.setProperty("--theme-color4","#198754")
-                landing.style.setProperty("background-image","url(../images/landing3.jpg)")
+                // landing.style.setProperty("background-image","url(../images/landing3.jpg)")
+                landing.style.backgroundImage = "url(../images/landing3.jpg)"
                 localStorage.setItem("color","green");
                 localStorage.setItem("color2","#2ad284");
                 localStorage.setItem("color3","seagreen");

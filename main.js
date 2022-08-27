@@ -46,19 +46,6 @@ contactTabs[1].onclick = function () {
   window.location.href = "mailto:hadyymohammed@gmail.com";
 };
 
-window.onload = () => { 
-    if(localStorage.color != null) {
-        root.style.setProperty("--theme-color1",localStorage.color) 
-        localStorage.id === 'theme3'? root.style.setProperty("--theme-color2",localStorage.color2) : root.style.setProperty("--theme-color2",localStorage.color)
-        localStorage.id === 'theme3'? root.style.setProperty("--theme-color3",localStorage.color3) : root.style.setProperty("--theme-color3",localStorage.color)
-        localStorage.id === 'theme3'? root.style.setProperty("--theme-color4",localStorage.color4) : root.style.setProperty("--theme-color4",localStorage.color)
-        for(let i = 1 ; i <= 3 ; i++) {
-            if(localStorage.id === `theme${i}`){
-                landing.style.setProperty("background-image",`url(../images/landing${i}.jpg)`)
-            }
-        }
-    }
-}
 
 themeTabs.forEach((tab) => {
     tab.addEventListener('click',()=> {
@@ -68,34 +55,27 @@ themeTabs.forEach((tab) => {
                 root.style.setProperty("--theme-color2","#e91e6378")
                 root.style.setProperty("--theme-color3","#e91e6378")
                 root.style.setProperty("--theme-color4","#e91e6378")
-                // landing.style.setProperty("background-image","url(../images/landing1.jpg)")
-                landing.style.backgroundImage = "url(../images/landing1.jpg)";
-                localStorage.setItem("color","#e91e6378");
-                localStorage.id = 'theme1'
+                landing.style.setProperty("background-image","url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1400')")
+                // landing.style.backgroundImage = "url(../images/landing1.jpg)";
             }
             else if (tab.id === 'theme2'){
                 root.style.setProperty("--theme-color1","#03a9f4") 
                 root.style.setProperty("--theme-color2","#03a9f4")
                 root.style.setProperty("--theme-color3","#03a9f4")
                 root.style.setProperty("--theme-color4","#03a9f4")
-                // landing.style.setProperty("background-image","url(../images/landing2.jpg)")
-                landing.style.backgroundImage = "url(../images/landing2.jpg)"
-                localStorage.setItem("color","#03a9f4");
-                localStorage.id = 'theme2'
+                landing.style.setProperty("background-image","url('https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1400')")
+                // landing.style.backgroundImage = "url(../images/landing2.jpg)"
             } 
             else if (tab.id === 'theme3') {
                 root.style.setProperty("--theme-color1","green") 
                 root.style.setProperty("--theme-color2","#2ad284")
                 root.style.setProperty("--theme-color3","seagreen")
                 root.style.setProperty("--theme-color4","#198754")
-                // landing.style.setProperty("background-image","url(../images/landing3.jpg)")
-                landing.style.backgroundImage = "url(../images/landing3.jpg)"
+                landing.style.setProperty("background-image","url('https://images.pexels.com/photos/3374205/pexels-photo-3374205.jpeg?auto=compress&cs=tinysrgb&w=1400&h=750&dpr=1')")
+                // landing.style.backgroundImage = "url(../images/landing3.jpg)"
                 localStorage.setItem("color","green");
                 localStorage.setItem("color2","#2ad284");
                 localStorage.setItem("color3","seagreen");
-                localStorage.setItem("color4","#198754");
-                localStorage.id = 'theme3'
-
             } 
         }, 1000);
 

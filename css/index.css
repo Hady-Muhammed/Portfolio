@@ -34,7 +34,17 @@ h2 {
 .fw-b {
     font-weight: bold;
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
+.swiper-slide div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 /* End Global Rules */
 /* Start Header */
 header {
@@ -189,7 +199,7 @@ section .nav a:hover  {
 .services .container {
     padding: var(--main-padding);
 }
-.services .row i {
+.services  i {
     font-size: 6em;
     color: var(--theme-color1);
 }
@@ -197,16 +207,16 @@ section .nav a:hover  {
     font-size: 19px;
     margin: 15px 0px;
 }
-.services .row div {
+.services .swiper div {
     transition: 0.5s;
 }
-.services .row .col-sm:hover {
+.services .swiper .col-sm:hover {
     transform: scale(1.4) translateY(-10%);
 }
-.services .row div p {
+.services .swiper div p {
     color: #7e7e7e;
 }
-.services .row div:nth-child(2) p span {
+.services .swiper div:nth-child(2) p span {
     font-weight: bold;
     font-size: 20px;
     color: var(--theme-color1);
@@ -216,6 +226,7 @@ section .nav a:hover  {
     -webkit-clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
     clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
     position: relative;
+    min-height: 320px;
 }
 .col-lg-4 h3 {
    transition: .5s;
@@ -243,6 +254,7 @@ section .nav a:hover  {
 .col-lg-4:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    cursor: grab;
 }
 .col-lg-4:hover h3 {
     color:white;

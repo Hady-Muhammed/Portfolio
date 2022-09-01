@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Favicon Image -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <title>Hady Muhammed</title>
 </head>
 <body>
@@ -78,24 +83,29 @@
     <div class="services" id="services">
         <div class="container">
             <h2 class="mx-auto w-auto text-center mb-5" data-aos="fade-up" data-aos-duration="1000">Services</h2>
-            <div class="row aos">
-                <div class="col-lg-4 shadow text-center p-4 my-2">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Good Coding Skills</h3>
-                    <p class="mt-5">Learned HTML , CSS , JS , Bootstrap And Created Relatively Good Projects</p>
-                </div>
-                <div class="col-lg-4 shadow text-center p-4 my-2">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Student in ComputerScience Helwan-Uni</h3>
-                    <p>Good Knowledge of Programming Basics & concepts And I Will Graduate in <span>2025</span> </p>
-                </div>
-                <div class="col-lg-4 shadow text-center p-4 my-2">
-                    <i class="fa-regular fa-handshake"></i>
-                    <h3>Passoniate, Ambitious Learner in The Technical Industry</h3>
-                    <p>I Can Say That I'm Genuinely A Hard-Working Person Who Likes to Learn New Things
-                        and Earn His Status in Life , Very Humble haha </p>
-                </div> 
+            
+    <!-- Swiper -->
+    <div class="swiper mySwiper aos">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide col-lg-4 shadow text-center p-4 my-2">
+                <i class="fa-solid fa-code"></i>
+                <h3>Good Coding Skills</h3>
+                <p class="mt-5 w-50 mx-auto">Learned HTML5 , CSS3 , JavaScript => ES6 , fetching data from APIs , Tailwindcss And Created Relatively Good Projects</p>
             </div>
+            <div class="swiper-slide col-lg-4 shadow text-center p-4 my-2">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Student in ComputerScience Helwan-Uni</h3>
+                <p class="mt-5 w-50 mx-auto">Good Knowledge of Programming Basics & concepts And I Will Graduate in <span>2025</span> </p>
+            </div>
+            <div class="swiper-slide col-lg-4 shadow text-center p-4 my-2">
+                <i class="fa-regular fa-handshake"></i>
+                <h3>Passoniate, Ambitious Learner in The Technical Industry</h3>
+                <p class="mt-5 w-50 mx-auto">I Can Say That I'm Genuinely A Hard-Working Person Who Likes to Learn New Things
+                    and Earn His Status in Life , Very Humble haha </p>
+            </div> 
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
             <h2 class="mx-auto w-25 text-center my-5" data-aos="fade-up" data-aos-duration="1000">Skills</h2>
             <div class="row mx-auto" data-aos="fade-down" >
                 <div class="col-sm text-center my-3"><img class="w-50" src="images/html5-logo.webp" alt=""></div>
@@ -314,8 +324,16 @@
     <!-- End Modal Animation -->
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       AOS.init();
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
     </script>
     </body>
 </html>

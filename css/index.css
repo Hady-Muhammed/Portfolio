@@ -44,7 +44,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 /* End Global Rules */
 /* Start Header */
 header {
@@ -207,10 +207,13 @@ section .nav a:hover  {
     font-size: 19px;
     margin: 15px 0px;
 }
-.services .swiper div {
+.services div {
     transition: 0.5s;
 }
-.services .swiper .col-sm:hover {
+.services .col-sm {
+    transition: 0.5s;
+}
+.services .col-sm:hover {
     transform: scale(1.4) translateY(-10%);
 }
 .services .swiper div p {

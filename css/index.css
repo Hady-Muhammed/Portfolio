@@ -22,14 +22,15 @@ h2 {
     font-weight: bold;
 }
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;;
+    background-color: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background-color:var(--theme-color3);
+    background-color:var(--theme-color4);
     border-radius: 8px;
+    box-shadow: 0 -100vh 0 100vh var(--theme-color3);
 }
 .fw-b {
     font-weight: bold;
@@ -569,7 +570,7 @@ footer .container .container {
         width: 0px;
     }
     to {
-        width: 100%;
+        width: 105%;
     }
 }
 @keyframes animated-1 {

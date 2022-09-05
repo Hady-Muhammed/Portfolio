@@ -540,7 +540,7 @@ footer .container .container {
     top: 40%;
     opacity: 1;
 }
-.show {
+.show-mod {
     transform: translate(-50% , -50%) scale(50);
 }
 

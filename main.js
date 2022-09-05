@@ -79,13 +79,13 @@ themeTabs.forEach((tab) => {
             } 
         }, 1000);
 
-        modal.classList.add('show')
+        modal.classList.add('show-mod')
         modalTxt.classList.add('animate')
         setTimeout(() => {
             modalTxt.classList.remove('animate')
         }, 1800);
         setTimeout(() => {
-            modal.classList.remove('show')
+            modal.classList.remove('show-mod')
         }, 2000);
     })
 });

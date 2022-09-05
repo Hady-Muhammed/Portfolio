@@ -89,4 +89,3 @@ themeTabs.forEach((tab) => {
         }, 2000);
     })
 });
-

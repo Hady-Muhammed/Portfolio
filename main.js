@@ -11,6 +11,7 @@ let modal = document.querySelector('.modal-animation');
 let modalTxt = document.querySelector('.modal-text')
 let root = document.querySelector(':root');
 let landing = document.querySelector('section');
+let loading = document.querySelector('.loading')
 window.onscroll = function () {
   if (window.scrollY >= contact.offsetTop - 700) {
     contactBoxL.style.animation = "comingleft 1s ease-in 1";
@@ -89,3 +90,10 @@ themeTabs.forEach((tab) => {
         }, 2000);
     })
 });
+
+setTimeout(()=> {
+  loading.style.opacity = 0;
+  setTimeout(() => {
+    loading.remove();
+  }, 4000);
+}, 2000)

@@ -46,6 +46,10 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
+hr {
+    background-color: var(--theme-color1);
+    height: 2px !important;
+}
 /* End Global Rules */
 /* Start Header */
 header {
@@ -543,7 +547,6 @@ footer .container .container {
 .show-mod {
     transform: translate(-50% , -50%) scale(50);
 }
-
 /* End Modal-animation */
 /* End Themes */
 @media (max-height: 550px) {
@@ -619,3 +622,9 @@ footer .container .container {
     } 
 }
 /* End Animations */
+.swiper-pagination-bullet-active {
+    background-color: var(--theme-color1) !important;
+}
+.swiper-pagination {
+    padding: 15px;
+}

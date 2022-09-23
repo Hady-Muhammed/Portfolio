@@ -95,5 +95,5 @@ setTimeout(()=> {
   loading.style.opacity = 0;
   setTimeout(() => {
     loading.remove();
-  }, 4000);
+  }, 1000);
 }, 2000)

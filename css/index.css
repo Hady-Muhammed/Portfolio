@@ -112,7 +112,7 @@ header nav li a:hover {
 /* End Header */
 /* Start Section */
 section {
-  background-image: url(../images/landing3.jpg);
+  background-image: url(../images/landing3.webp);
   background-size: cover;
   background-attachment: fixed;
   height: 90vh;

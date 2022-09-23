@@ -145,7 +145,7 @@ section::after {
 section::before {
   content: "";
   position: absolute;
-  background-image: url(../images/hady.png);
+  background-image: url(../images/hady.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

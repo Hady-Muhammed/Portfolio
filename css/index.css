@@ -342,7 +342,7 @@ section span:nth-child(19) {
   -webkit-clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
   clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
   position: relative;
-  min-height: 320px;
+  height: 320px;
 }
 .col-lg-4 h3 {
   transition: 0.5s;
@@ -418,6 +418,7 @@ section span:nth-child(19) {
 }
 .services .flex .link {
   display: block;
+  position: relative;
   width: fit-content;
   height: fit-content;
   margin-left: 20em;
@@ -431,10 +432,30 @@ section span:nth-child(19) {
   transition: 0.5s;
   text-decoration: none;
   border-radius: 5px;
+  overflow: hidden;
+}
+.services .flex .link p {
+  margin: 0;
+  transition: .5s;
+}
+.services .flex .link i {
+  color: white;
+  position: absolute;
+  font-size: 1.5em;
+  left: 50%;
+  top: 125%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
 }
 .services .flex .link:hover {
   background-color: var(--theme-color1);
   color: white;
+}
+.services .flex .link:hover i {
+  top: 50%;
+}
+.services .flex .link:hover p {
+  transform: translateY(-200%);
 }
 @media (max-width: 1029px) {
   .services .flex {

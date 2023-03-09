@@ -56,7 +56,11 @@ header {
   position: sticky;
   z-index: 2;
   top: 0;
+  transition: 0.5s;
   border-bottom: 2px solid var(--theme-color1);
+}
+.hidden {
+  top: -100px;
 }
 header a {
   background: rgb(9, 87, 34);
@@ -421,8 +425,6 @@ section span:nth-child(19) {
   position: relative;
   width: fit-content;
   height: fit-content;
-  margin-left: 20em;
-  margin-top: 6em;
   border: 2px solid var(--theme-color1);
   color: var(--theme-color1);
   font-weight: bold;
@@ -844,3 +846,10 @@ footer .container .container {
   }
 }
 /* End Loading Screen */
+
+.leet {
+  margin-right: 110px;
+}
+.leet-img {
+  width: 30px;
+}

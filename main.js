@@ -10,7 +10,7 @@ let modalTxt = document.querySelector('.modal-text')
 let root = document.querySelector(':root');
 let landing = document.querySelector('section');
 let loading = document.querySelector('.loading')
-
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   if (window.scrollY >= contact.offsetTop - 700) {
     contactBoxL.style.animation = "comingleft 1s ease-in 1";
@@ -31,10 +31,15 @@ window.onscroll = function () {
   ) {
     nav.classList.remove("bg-dark");
   }
+
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("header").classList.remove("hidden");
+  } else {
+    document.querySelector("header").classList.add("hidden");
+  }
+  prevScrollpos = currentScrollPos;
 };
-
-
-
 
 themeTabs.forEach((tab) => {
     tab.addEventListener('click',()=> {

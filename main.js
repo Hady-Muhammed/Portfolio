@@ -5,11 +5,12 @@ let contact = document.querySelector(".contact");
 let serviceSection = document.getElementById("services");
 let projectSection = document.getElementById("projects");
 let themeTabs = document.querySelectorAll(".themes li");
-let modal = document.querySelector('.modal-animation');
-let modalTxt = document.querySelector('.modal-text')
-let root = document.querySelector(':root');
-let landing = document.querySelector('section');
-let loading = document.querySelector('.loading')
+let modal = document.querySelector(".modal-animation");
+let modalTxt = document.querySelector(".modal-text");
+let root = document.querySelector(":root");
+let landing = document.querySelector("section");
+let loading = document.querySelector(".loading");
+let showMoreBtn = document.querySelector(".show-more-btn");
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   if (window.scrollY >= contact.offsetTop - 700) {
@@ -42,48 +43,55 @@ window.onscroll = function () {
 };
 
 themeTabs.forEach((tab) => {
-    tab.addEventListener('click',()=> {
-        setTimeout(() => {
-            if(tab.id === 'theme1') {
-                root.style.setProperty("--theme-color1","#e91e6378") 
-                root.style.setProperty("--theme-color2","#e91e6378")
-                root.style.setProperty("--theme-color3","#e91e6378")
-                root.style.setProperty("--theme-color4","#e91e6378")
-                landing.style.setProperty("background-image","url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1400')")
-            }
-            else if (tab.id === 'theme2'){
-                root.style.setProperty("--theme-color1","#03a9f4") 
-                root.style.setProperty("--theme-color2","#03a9f4")
-                root.style.setProperty("--theme-color3","#03a9f4")
-                root.style.setProperty("--theme-color4","#03a9f4")
-                landing.style.setProperty("background-image","url('https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1400')")
-            } 
-            else if (tab.id === 'theme3') {
-                root.style.setProperty("--theme-color1","green") 
-                root.style.setProperty("--theme-color2","#2ad284")
-                root.style.setProperty("--theme-color3","seagreen")
-                root.style.setProperty("--theme-color4","#198754")
-                landing.style.setProperty("background-image","url('https://images.pexels.com/photos/3374205/pexels-photo-3374205.jpeg?auto=compress&cs=tinysrgb&w=1400&h=750&dpr=1')")
-                localStorage.setItem("color","green");
-                localStorage.setItem("color2","#2ad284");
-                localStorage.setItem("color3","seagreen");
-            } 
-        }, 1000);
+  tab.addEventListener("click", () => {
+    setTimeout(() => {
+      if (tab.id === "theme1") {
+        root.style.setProperty("--theme-color1", "#e91e6378");
+        root.style.setProperty("--theme-color2", "#e91e6378");
+        root.style.setProperty("--theme-color3", "#e91e6378");
+        root.style.setProperty("--theme-color4", "#e91e6378");
+        landing.style.setProperty(
+          "background-image",
+          "url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1400')"
+        );
+      } else if (tab.id === "theme2") {
+        root.style.setProperty("--theme-color1", "#03a9f4");
+        root.style.setProperty("--theme-color2", "#03a9f4");
+        root.style.setProperty("--theme-color3", "#03a9f4");
+        root.style.setProperty("--theme-color4", "#03a9f4");
+        landing.style.setProperty(
+          "background-image",
+          "url('https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1400')"
+        );
+      } else if (tab.id === "theme3") {
+        root.style.setProperty("--theme-color1", "green");
+        root.style.setProperty("--theme-color2", "#2ad284");
+        root.style.setProperty("--theme-color3", "seagreen");
+        root.style.setProperty("--theme-color4", "#198754");
+        landing.style.setProperty(
+          "background-image",
+          "url('https://images.pexels.com/photos/3374205/pexels-photo-3374205.jpeg?auto=compress&cs=tinysrgb&w=1400&h=750&dpr=1')"
+        );
+        localStorage.setItem("color", "green");
+        localStorage.setItem("color2", "#2ad284");
+        localStorage.setItem("color3", "seagreen");
+      }
+    }, 1000);
 
-        modal.classList.add('show-mod')
-        modalTxt.classList.add('animate')
-        setTimeout(() => {
-            modalTxt.classList.remove('animate')
-        }, 1800);
-        setTimeout(() => {
-            modal.classList.remove('show-mod')
-        }, 2000);
-    })
+    modal.classList.add("show-mod");
+    modalTxt.classList.add("animate");
+    setTimeout(() => {
+      modalTxt.classList.remove("animate");
+    }, 1800);
+    setTimeout(() => {
+      modal.classList.remove("show-mod");
+    }, 2000);
+  });
 });
 
-setTimeout(()=> {
+setTimeout(() => {
   loading.style.opacity = 0;
   setTimeout(() => {
     loading.remove();
   }, 1000);
-}, 2000)
+}, 2000);

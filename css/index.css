@@ -8,6 +8,10 @@
 html {
   scroll-behavior: smooth;
 }
+svg {
+  width: 4rem;
+  height: fit-content;
+}
 :root {
   --main-padding: 0 50px 100px;
   --theme-color1: green; /**/

@@ -353,7 +353,7 @@ section span:nth-child(19) {
   color: var(--theme-color1);
 }
 .col-lg-4 {
-  background-color: gainsboro;
+  background-color: whitesmoke;
   -webkit-clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
   clip-path: polygon(13% 0, 89% 0, 100% 100%, 0% 100%);
   position: relative;
@@ -389,7 +389,7 @@ section span:nth-child(19) {
 }
 .col-lg-4:hover h3 {
   color: white;
-  font-size: 1.25em;
+  font-size: 1.45em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .col-lg-4:hover::before,

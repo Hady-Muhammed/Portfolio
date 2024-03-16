@@ -153,7 +153,7 @@ section::after {
 .roww {
   display: flex;
   width: fit-content;
-  gap: 2rem;
+  gap: 5rem;
   align-items: center;
 }
 section::before {

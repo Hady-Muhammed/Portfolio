@@ -1,3 +1,4 @@
+let year = document.getElementById("year");
 let contactBoxL = document.getElementById("left");
 let contactBoxR = document.getElementById("right");
 let nav = document.getElementById("nav");
@@ -12,6 +13,9 @@ let landing = document.querySelector("section");
 let loading = document.querySelector(".loading");
 let showMoreBtn = document.querySelector(".show-more-btn");
 let prevScrollpos = window.pageYOffset;
+
+year.innerText = new Date().getFullYear();
+
 window.onscroll = function () {
   if (window.scrollY >= contact.offsetTop - 700) {
     contactBoxL.style.animation = "comingleft 1s ease-in 1";
@@ -95,3 +99,10 @@ setTimeout(() => {
     loading.remove();
   }, 1000);
 }, 2000);
+
+const tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
